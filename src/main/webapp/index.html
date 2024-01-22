@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息管理系统</title>
+    <link rel="shortcut icon" href="resource/favicon.ico">
+    <link rel="stylesheet" href="css/PersonalStyle.css">
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+    <div id="pageShadow"></div>
+    <div class="top">
+        <div class="top-nav">
+            <ul class="fl">
+                <li id="select">首页</li>
+                <li id="select">库</li>
+                <li id="select">修改</li>
+                <li id="select">类型四</li>
+            </ul>
+        </div>
+        <div class="user-priture"><img src="resource/favicon.ico" alt="icon"></div>
+        <div class="user-content">
+            <p class="user-content-name">谭雅·提古雷查夫</p>
+            <p class="user-content-txt">欢迎来到莱茵战线,新兵</p>
+            <div class="logging-button" onclick="openShadow()">立即登录</div>
+        </div>
+    </div>
+    <div id="logging-block">
+        <div id="block-logging-style">
+            <div class="cancel" onclick="closeShadow()">X</div>
+            <div id="img-div"></div>
+            <div id="deep-div">
+                <form action="Register" method="post" id="user-msg">
+                    <div id="user-account"><input type="text" placeholder="请输入账号" id="user-account-value" name="account"></div>
+                    <div id="user-password"><input type="text" placeholder="请输入密码" id="user-password-value" name="password"></div>
+                    <div id="btn">
+                        <input type="button" value="登录" onclick="logging()">
+                        <input type="button" value="注册" onclick="register()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="all-items">
+        <div class="content">
+            <div class="content-0-0">
+                <div id="wrap">
+                    <div id="img-group">
+                        <img id="loop-img" src="resource/puture-0-0.jpg" alt="00">
+                        <img id="loop-img" src="resource/puture-0-1.webp" alt="01">
+                        <img id="loop-img" src="resource/puture-0-2.webp" alt="02">
+                    </div>
+                </div>
+                <div class="talk-0-1">
+                    <p>诸君,我们的任务是什么？ 是歼灭！一个不剩的歼灭掉
+                        我们要做的事情只有一件,就是创造出地狱!!!
+                    </p>
+                    <p>最为艰难的战场,微乎其微的报酬,枪林弹雨的日子,难以忍受的危险,生还之日将获得的名誉和赞赏.
+                        除了最后一句都是真的啊.
+                    </p>
+                    <p>
+                        各位战友,我相信的不是神,而是作为理论和知性根据地的参谋本部,义务和献身才是我们的荣耀.
+                        去夺取这场战争的胜利吧.哪怕是炼狱也要前去征服,这才是帝国军人的本职.让他们瞧瞧我们这群看门狗有多么的优秀.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1 align="center">所谓战争</h1>
+        <h3>
+            如果地球会说话,她会说些什么呢?自公元前3500年以来,
+            这个星球已经经历了14500场战争,
+            且亲眼目睹了35亿人类生命被有组织的战争所终结.战争是人类文化中最持久和最悲剧的一个方面.
+            我们在前人尸首上蹒跚前行,为什么不能牢记做出的牺牲呢？</h3>
+        <div class="content" id="wars"></div>
+    </div>
+
+    <div class="footer">
+        <ul class="footer-nav"></ul>
+    </div>
+</body>
+
+</html>

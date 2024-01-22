@@ -1,0 +1,17 @@
+#ImgBox{
+    column-count: 4;
+    column-gap: 20px;
+}
+img{
+    margin-top: 20px;
+    width: 100%;
+}
+#Add{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #d99d00;
+    color: white;
+}

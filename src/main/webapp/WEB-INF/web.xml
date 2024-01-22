@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <!-- 在服务器上运行的小程序设定 -->
+    <!-- 一个servlet对应一个servlet-mapping -->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <!-- 小程序对应后端路径 -->
+        <!-- 这里指的是相对路径，src下的servlet.login.Login -->
+        <!-- Login即为我的实现登录的后端类 -->
+        <servlet-class>servlet.login.Login</servlet-class>
+    </servlet>
+    <!-- 小程序映射路径 -->
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <!-- 这个是编译运行时小程序对应的输出路径，位于out中 -->
+        <url-pattern>/servlet/login</url-pattern>
+    </servlet-mapping>
+
+    <!-- 与上同 -->
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>servlet.register.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/servlet/register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Correct</servlet-name>
+        <servlet-class>servlet.correct.Correct</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Correct</servlet-name>
+        <url-pattern>/servlet/correct</url-pattern>
+    </servlet-mapping>
+</web-app>
